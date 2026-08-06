@@ -13,6 +13,8 @@ Snug is an open protocol for **user-built micro apps that think through their ho
 
 **v0.1 — published.** The wire protocol — 9 postMessage frames, the chat envelope, and normative rules R1–R6 — is specified in [SPEC.md](SPEC.md), with JSON Schemas in [schemas/](schemas/) published byte-identical from the production reference implementation.
 
+**v0.2 — DRAFT.** The Portable User Database Format (one user-owned SQLite file: hub tables, native per-app tables, sync origins, export/import) is published for review in [SPEC-v0.2-draft.md](SPEC-v0.2-draft.md); the wire protocol is unchanged by it.
+
 ## Contributing
 
 This spec is maintained through the reference implementation's engineering process — protocol proposals and discussion happen in [`snugprotocol/snug`](https://github.com/snugprotocol/snug) issues/discussions; every spec change lands here as a single traceable commit. Direct PRs to this repo are welcome for typos/clarity only.

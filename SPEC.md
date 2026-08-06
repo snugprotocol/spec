@@ -4,6 +4,7 @@
 - **Status:** current
 - **Versioning:** spec versions (`v0.x`) are independent of implementation package versions. Breaking envelope changes bump the minor pre-1.0. Every published change is a single commit referencing its origin task.
 - **Normative schemas:** [`schemas/`](schemas/) — JSON Schema for every message type, published byte-identical from the reference implementation (`packages/protocol`). Schemas are `io: 'input'` shapes: validators MUST accept unknown fields (rule R2).
+- **In draft:** [v0.2 — Portable User Database Format](SPEC-v0.2-draft.md) (storage + hub-behavior layer; wire protocol unchanged).
 
 Snug connects agents to apps: LLM-authored single-file HTML micro-apps run in a sandboxed
 iframe and think through the **host's** agent at runtime, over two coupled contracts:
