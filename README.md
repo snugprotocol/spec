@@ -11,7 +11,7 @@ Snug is an open protocol for **user-built micro apps that think through their ho
 
 ## Status
 
-**v0.0 — pre-release skeleton.** The v0.1 draft is being extracted from a production-proven implementation. Watch this repo.
+**v0.1 — published.** The wire protocol — 9 postMessage frames, the chat envelope, and normative rules R1–R6 — is specified in [SPEC.md](SPEC.md), with JSON Schemas in [schemas/](schemas/) published byte-identical from the production reference implementation.
 
 ## Contributing
 
