@@ -6,7 +6,7 @@ Snug is an open protocol for **user-built micro apps that think through their ho
 
 - **[SPEC.md](SPEC.md)** — the protocol specification
 - **[schemas/](schemas/)** — JSON Schemas for every message type (published from the reference implementation)
-- **[whitepaper/](whitepaper/)** — design rationale, threat model, security properties
+- **[whitepaper/](whitepaper/)** — [the whitepaper](whitepaper/snug-protocol-whitepaper.pdf) (PDF): design rationale, threat model, security properties
 - **[implementations.md](implementations.md)** — known implementations
 
 ## Status
