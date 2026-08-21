@@ -1,5 +1,10 @@
 # Snug Protocol — Spec v0.2 (DRAFT) — Portable User Database Format
 
+> **Consolidated (2026-08-20):** this document's content carries forward into
+> [SPEC-v0.3-draft.md](SPEC-v0.3-draft.md) Part II, which is the working document for
+> 1.0 and describes the current storage schema (6). This file remains the published
+> record of the v0.2 draft as reviewed.
+>
 > **Status: DRAFT.** Published for review alongside [spec v0.1](SPEC.md); not yet
 > normative — it finalizes as spec v0.2. The wire protocol (frames + envelope) is
 > UNCHANGED at v1: v0.2 adds a storage and hub-behavior layer on top of v0.1. Source

@@ -4,7 +4,7 @@
 - **Status:** current
 - **Versioning:** spec versions (`v0.x`) are independent of implementation package versions. Breaking envelope changes bump the minor pre-1.0. Every published change is a single commit referencing its origin task.
 - **Normative schemas:** [`schemas/`](schemas/) — JSON Schema for every message type, published byte-identical from the reference implementation (`packages/protocol`). Schemas are `io: 'input'` shapes: validators MUST accept unknown fields (rule R2).
-- **In draft:** [v0.2 — Portable User Database Format](SPEC-v0.2-draft.md) (storage + hub-behavior layer; wire protocol unchanged).
+- **In draft:** [v0.3 — the consolidated specification](SPEC-v0.3-draft.md) (the working document for 1.0: wire protocol incl. the additively published net/open-url pairs, storage incl. [v0.2's](SPEC-v0.2-draft.md) content, connected applications, runtime contracts, linked-device connections). This document remains the published v0.1 wire-protocol core; the v1 frames and rules are unchanged.
 
 Snug connects agents to apps: LLM-authored single-file HTML micro-apps run in a sandboxed
 iframe and think through the **host's** agent at runtime, over two coupled contracts:

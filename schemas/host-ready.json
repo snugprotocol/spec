@@ -9,6 +9,12 @@
         "db": {
           "type": "boolean"
         },
+        "net": {
+          "type": "boolean"
+        },
+        "openUrl": {
+          "type": "boolean"
+        },
         "streaming": {
           "type": "boolean"
         }
