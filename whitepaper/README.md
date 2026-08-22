@@ -1,8 +1,8 @@
 # Whitepaper
 
 **[The Snug Protocol: An Open Protocol for Agent-Backed Personal Software](snug-protocol-whitepaper.pdf)** —
-Jeetu Maker, August 2026. A4, 33 pages. **Edition 2**, covering the consolidated
-**spec v0.3 draft**.
+Jeetu Maker, August 2026. A4, 33 pages. **Edition 3 — the 1.0 edition**, covering
+**Specification 1.0**.
 
 The design rationale behind the specification: why the protocol is shaped the way it is,
 what it defends against, and what it deliberately does not attempt.
@@ -26,16 +26,16 @@ the connection lifecycle, the executor's gate sequence, and the linked-device su
 
 ## Scope and status
 
-The paper describes the **spec v0.3 draft** — the wire protocol's core (normative since
-v0.1, additively extended) and the draft surfaces (storage at schema 6, connected
-applications, runtime contracts, linked-device connections), which are published for
-review and finalise as spec 1.0. Where the paper and the specification differ,
-[SPEC-v0.3-draft.md](../SPEC-v0.3-draft.md) governs.
+The paper describes **Specification 1.0** — the wire protocol (core normative since
+v0.1, additively extended), storage at schema 6, connected applications, runtime
+contracts, and linked-device connections, all normative at 1.0 (standing approvals is
+explicitly provisional). Where the paper and the specification differ,
+[SPEC.md](../SPEC.md) governs.
 
-Every normative claim traces to [SPEC-v0.3-draft.md](../SPEC-v0.3-draft.md) or
-[schemas/](../schemas/); the frame inventory and protocol constants are verified against
-those files by a conformance check in the reference implementation, so the paper cannot
-drift from the wire as the protocol moves.
+Every normative claim traces to [SPEC.md](../SPEC.md) or [schemas/](../schemas/); the
+frame inventory and protocol constants are verified against those files by a conformance
+check in the reference implementation, so the paper cannot drift from the wire as the
+protocol moves.
 
-Edition 1 (22 pages, spec v0.1 + the v0.2 draft) remains available in this repository's
-history.
+Editions 1 (22 pages, spec v0.1 + the v0.2 draft) and 2 (the v0.3 release candidate)
+remain available in this repository's history.
