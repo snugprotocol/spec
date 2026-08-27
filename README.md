@@ -1,6 +1,6 @@
 <h1 align="center">The Snug Protocol</h1>
 
-<p align="center"><strong>MCP connects agents to tools. Snug connects agents to apps.</strong></p>
+<p align="center"><strong>An open protocol for portable, agent-backed personal software.</strong></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/specification-1.0-orange.svg" alt="Specification 1.0" />
