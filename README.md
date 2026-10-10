@@ -3,7 +3,7 @@
 <p align="center"><strong>An open protocol for portable, agent-backed personal software.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/specification-1.0-orange.svg" alt="Specification 1.0" />
+  <img src="https://img.shields.io/badge/specification-1.1-orange.svg" alt="Specification 1.1" />
   <img src="https://img.shields.io/badge/status-NORMATIVE-brightgreen.svg" alt="Status: normative" />
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT" />
 </p>
@@ -23,23 +23,24 @@ Snug is an open protocol for **user-built micro apps that think through their ho
 
 | | |
 |---|---|
-| **[SPEC.md](SPEC.md)** | **Specification 1.0** — the complete normative specification in one document |
+| **[SPEC.md](SPEC.md)** | **Specification 1.1** — the complete normative specification in one document |
 | **[schemas/](schemas/)** | JSON Schemas for every message type — published **byte-identical** from the reference implementation |
-| **[whitepaper/](whitepaper/)** | [The whitepaper](whitepaper/snug-protocol-whitepaper.pdf) (PDF, edition 3 — the 1.0 edition): design rationale, threat model, security properties |
+| **[whitepaper/](whitepaper/)** | [The whitepaper](whitepaper/snug-protocol-whitepaper.pdf) (PDF, edition 4 — the 1.1 edition): design rationale, threat model, security properties |
 | **[implementations.md](implementations.md)** | Known implementations |
 
 ## What the spec covers
 
-**Specification 1.0 — NORMATIVE** (2026-08-22). One document, six parts:
+**Specification 1.1 — NORMATIVE** (2026-10-10). One document, seven parts:
 
-- **The wire protocol** — 13 frames (nine core plus the net and open-url pairs), the chat envelope, and rules R1–R7. The core has been published and stable since v0.1.
+- **The wire protocol** — 15 frames (nine core plus the net, open-url and access pairs), the chat envelope, and rules R1–R7. The core has been published and stable since v0.1.
 - **The Portable User Database Format** — storage schema 6, `.snug` naming, and the `SNUGENC1` protected (passphrase-sealed) form.
 - **Connected applications** — requirements, grants, credential custody, and the host executor: how apps reach a user's services without credentials ever entering the app or the LLM.
 - **Runtime contracts and the app chat surface** — the compact per-app turn assembly that makes runtime thinking cheap enough for small local models.
 - **Linked-device connections** — hosts that bridge a personal device session (e.g. WhatsApp) without an LLM in the loop.
+- **Access between apps** — one app reads another's tables only under an access grant the user gives on host chrome: read-only, scoped to tables with their columns frozen, timed, revocable, logged on the source; the two frames, the record a hub persists, and the host's obligations.
 - **Conformance** — what a host must, should, and may implement.
 
-One section is explicitly **provisional** and so marked: §17 (standing approvals). All 14 schemas in [schemas/](schemas/) are byte-identical exports from the reference implementation.
+One section is explicitly **provisional** and so marked: §17 (standing approvals). All 16 schemas in [schemas/](schemas/) are byte-identical exports from the reference implementation.
 
 ## Versioning
 
