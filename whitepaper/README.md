@@ -1,8 +1,8 @@
 # Whitepaper
 
 **[The Snug Protocol: An Open Protocol for Agent-Backed Personal Software](snug-protocol-whitepaper.pdf)** —
-Jeetu Maker, October 2026. A4, 35 pages. **Edition 4 — the 1.1 edition**, covering
-**Specification 1.1**.
+Jeetu Maker, October 2026. A4, 36 pages. **Edition 5 — the 1.2 edition**, covering
+**Specification 1.2**.
 
 The design rationale behind the specification: why the protocol is shaped the way it is,
 what it defends against, and what it deliberately does not attempt.
@@ -17,7 +17,8 @@ the optional `SNUGENC1` passphrase container · connected applications — requi
 grants, frozen host ceilings, and the ten-gate executor · linked-device connections — the
 helper surface for providers that authenticate a device session, with its custody split
 and pseudonymisation backstop · runtime contracts and the app data surface · access between
-apps — the one sanctioned crossing, under an access grant the user gives · conformance ·
+apps — the one sanctioned crossing, under an access grant the user gives: read, or with a
+per-table yes write with an undo, refresh on demand and id-only change hints · conformance ·
 related work — the Model Context Protocol, vendor application platforms, and the
 local-first tradition · limitations and future work.
 
@@ -29,10 +30,11 @@ own worker.
 
 ## Scope and status
 
-The paper describes **Specification 1.1** — the wire protocol (core normative since
+The paper describes **Specification 1.2** — the wire protocol (core normative since
 v0.1, additively extended), storage at schema 6, connected applications, runtime
-contracts, linked-device connections, and access between apps (Part VI, new at 1.1), all
-normative at 1.1 (standing approvals is explicitly provisional). Where the paper and the specification differ,
+contracts, linked-device connections, and access between apps (Part VI, new at 1.1; writes
+with an undo, refresh and discovery at 1.2), all normative at 1.2 (standing approvals is
+explicitly provisional). Where the paper and the specification differ,
 [SPEC.md](../SPEC.md) governs.
 
 Every normative claim traces to [SPEC.md](../SPEC.md) or [schemas/](../schemas/); the
@@ -40,5 +42,6 @@ frame inventory and protocol constants are verified against those files by a con
 check in the reference implementation, so the paper cannot drift from the wire as the
 protocol moves.
 
-Editions 1 (22 pages, spec v0.1 + the v0.2 draft), 2 (the v0.3 release candidate) and 3
-(33 pages, the 1.0 edition) remain available in this repository's history.
+Editions 1 (22 pages, spec v0.1 + the v0.2 draft), 2 (the v0.3 release candidate), 3
+(33 pages, the 1.0 edition) and 4 (35 pages, the 1.1 edition) remain available in this
+repository's history.
