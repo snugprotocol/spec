@@ -1,8 +1,8 @@
 # Whitepaper
 
 **[The Snug Protocol: An Open Protocol for Agent-Backed Personal Software](snug-protocol-whitepaper.pdf)** —
-Jeetu Maker, October 2026. A4, 36 pages. **Edition 5 — the 1.2 edition**, covering
-**Specification 1.2**.
+Jeetu Maker, October 2026. A4, 36 pages. **Edition 6 — the 1.3 edition**, covering
+**Specification 1.3**.
 
 The design rationale behind the specification: why the protocol is shaped the way it is,
 what it defends against, and what it deliberately does not attempt.
@@ -18,7 +18,9 @@ grants, frozen host ceilings, and the ten-gate executor · linked-device connect
 helper surface for providers that authenticate a device session, with its custody split
 and pseudonymisation backstop · runtime contracts and the app data surface · access between
 apps — the one sanctioned crossing, under an access grant the user gives: read, or with a
-per-table yes write with an undo, refresh on demand and id-only change hints · conformance ·
+per-table yes write with an undo, refresh on demand and id-only change hints; what an app says it
+would like to read, a grant started from the source's side, the chat's approved change, fetch new
+data first, and the access history carried across a sync · conformance ·
 related work — the Model Context Protocol, vendor application platforms, and the
 local-first tradition · limitations and future work.
 
@@ -43,5 +45,5 @@ check in the reference implementation, so the paper cannot drift from the wire a
 protocol moves.
 
 Editions 1 (22 pages, spec v0.1 + the v0.2 draft), 2 (the v0.3 release candidate), 3
-(33 pages, the 1.0 edition) and 4 (35 pages, the 1.1 edition) remain available in this
-repository's history.
+(33 pages, the 1.0 edition), 4 (35 pages, the 1.1 edition) and 5 (36 pages, the 1.2 edition)
+remain available in this repository's history.
